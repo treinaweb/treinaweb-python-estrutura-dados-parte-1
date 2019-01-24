@@ -49,5 +49,19 @@ class Vetor():
         self.__elementos[self.__posicao] = elemento
         self.__posicao += 1
 
+    def remover_elemento_indice(self, posicao):
+        # 1, 2, 3
+        # 1, vetor_inicio
+        # 3 vetor_final
+        # 1
+        vetor_inicio = self.__elementos[:posicao] # 1 2 5 vetor_inicio
+        vetor_final = self.__elementos[posicao + 1:] # 3 1 vetor_final
+        self.__elementos = vetor_inicio + vetor_final # 1 2 5 3 1
+        self.__posicao -= 1
+
+    def remover_elemento(self, elemento):
+        posicao = self.indice(elemento)
+        self.remover_elemento_indice(posicao)
+
     def listar_elemento(self, posicao):
         return self.__elementos[posicao]
