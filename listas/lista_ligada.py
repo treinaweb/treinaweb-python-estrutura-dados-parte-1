@@ -33,6 +33,20 @@ class ListaLigada():
             novo_no.proximo = no_atual
         self.__tamanho += 1
 
+    def contem(self, elemento):
+        for i in range(self.__tamanho):
+            no_atual = self.recuperar_no(i)
+            if no_atual.elemento == elemento:
+                return True
+        return False
+
+    def indice(self, elemento):
+        for i in range(self.__tamanho):
+            no_atual = self.recuperar_no(i)
+            if no_atual.elemento == elemento:
+                return i
+        return -1
+
     def esta_vazia(self):
         return self.__tamanho == 0
 

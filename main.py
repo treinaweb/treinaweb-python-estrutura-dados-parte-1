@@ -40,4 +40,6 @@ elif menu == 2:
     lista_teste.inserir(5)
     lista_teste.inserir_posicao(2, 10)
     print(lista_teste)
+    print(lista_teste.contem(5))
+    print(lista_teste.indice(55))
     #print(lista_teste.recuperar_elemento_no(3))
