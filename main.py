@@ -37,3 +37,5 @@ elif menu == 2:
     lista_teste = lista_ligada.ListaLigada()
     lista_teste.inserir(1)
     lista_teste.inserir(2)
+    lista_teste.inserir(3)
+    print(lista_teste)
