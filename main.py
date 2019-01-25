@@ -38,5 +38,6 @@ elif menu == 2:
     lista_teste.inserir(1)
     lista_teste.inserir(4)
     lista_teste.inserir(5)
+    lista_teste.inserir_posicao(2, 10)
     print(lista_teste)
-    print(lista_teste.recuperar_elemento_no(3))
+    #print(lista_teste.recuperar_elemento_no(3))
