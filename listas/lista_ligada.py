@@ -72,3 +72,25 @@ class ListaLigada():
             else:
                 resultado = resultado.proximo
         return resultado
+
+    def remover_elemento(self, elemento):
+        no_remover = self.indice(elemento)
+        if no_remover == -1:
+            print("Elemento não existe")
+        self.remover_posicao(no_remover)
+
+    def remover_posicao(self, posicao):
+        if posicao == 0:
+            proximo_no = self.__primeiro_no.proximo
+            self.__primeiro_no = None
+            self.__primeiro_no = proximo_no
+        elif posicao == self.__tamanho - 1:
+            penultimo_no = self.recuperar_no(self.__tamanho - 2)
+            penultimo_no.proximo = None
+            self.__ultimo_no = penultimo_no
+        else:
+            no_remover = self.recuperar_no(posicao)
+            no_anterior = self.recuperar_no(posicao - 1)
+            no_anterior.proximo = no_remover.proximo
+            no_remover.proximo = None
+        self.__tamanho -= 1
