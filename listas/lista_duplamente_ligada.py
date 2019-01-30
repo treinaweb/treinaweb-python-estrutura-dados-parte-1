@@ -92,7 +92,7 @@ class ListaDuplamenteLigada():
         if posicao == 0:
             proximo_no = self.__primeiro_no.proximo
             self.__primeiro_no.proximo = None
-            proximo_no.anterior = None
+            self.__primeiro_no.anterior = None
             self.__primeiro_no = proximo_no
         elif posicao == self.__tamanho - 1:
             penultimo_no = self.__ultimo_no.anterior

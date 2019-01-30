@@ -68,6 +68,4 @@ elif menu == 3:
 elif menu == 4:
     pilha_teste = pilha.Pilha()
     pilha_teste.empilhar(5)
-    pilha_teste.empilhar(6)
-    pilha_teste.empilhar(7)
     print(pilha_teste.desempilhar())
