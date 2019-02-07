@@ -1,3 +1,11 @@
+# TreinaWeb: curso "Python - Estrutura de Dados - Parte 1"
+
+Repositório com o código produzido durante o curso "Python - Estrutura de Dados - Parte 1".
+
+#### Ferramentas utilizadas no curso:
+  - Python 3.6
+  - PyCharm Community Edition
+
 #### Lista de commits
 Aula | Video | Commit | Link 
 ------ | ------ | ------ | ------ 
